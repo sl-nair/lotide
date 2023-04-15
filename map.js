@@ -28,3 +28,5 @@ assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ])
 
 const colours = ['red', 'green']
 assertArraysEqual(map(colours, colour => `I like ${colour}`),['I like red', 'I like green'] )
+
+module.exports = map;
