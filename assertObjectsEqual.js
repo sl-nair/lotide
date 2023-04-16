@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays');
+
 const assertObjectsEqual = function (actual, expected) {
   const inspect = require('util').inspect;
   if (Object.keys(actual).length !== Object.keys(expected).length) {
@@ -25,15 +27,7 @@ const assertObjectsEqual = function (actual, expected) {
   return;
 };
 
-const eqArrays = function (array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
 
-  return true;
-};
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
