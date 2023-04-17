@@ -1,6 +1,6 @@
 const assertEqual = require('./assertEqual');
 
-const findKeyByValue  = function(theObject,value) {
+const findKeyByValue  = function(theObject, value) {
   //scan the object to see what index the key of the value is at
   for (let eachKey in theObject) {
     //need to check if the value is equal to any value in the object
