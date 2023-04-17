@@ -1,4 +1,3 @@
-//function
 const middle = function(input) {
   let newArray = [];
   if (input.length <= 2) {
@@ -11,6 +10,5 @@ const middle = function(input) {
   }
   return newArray;
 };
-
 
 module.exports = middle;

@@ -1,9 +1,10 @@
-const assertArraysEqual = require('./assertArraysEqual.js')
+const assertArraysEqual = require('./assertArraysEqual.js');
+
 const flatten = function(inputs) {
   let newArray = [];
-  for (let input of inputs) {
+  for (const input of inputs) {
     if (Array.isArray(input)) {
-      for (let inputArrayElements of input) {
+      for (const inputArrayElements of input) {
         newArray.push(inputArrayElements);
       }
     } else {

@@ -1,10 +1,10 @@
-const assertArraysEqual = require('./assertArraysEqual')
+const assertArraysEqual = require('./assertArraysEqual');
 
-const without = function (source, remove) {
+const without = function(source, remove) {
   let newArray = [];
   let hasTrash = false;
-  for (let item of source) {
-    for (let trash of remove) {
+  for (const item of source) {
+    for (const trash of remove) {
       if (item === trash) {
         hasTrash = true;
         break;
@@ -17,8 +17,6 @@ const without = function (source, remove) {
   }
   return newArray;
 };
-
-
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]

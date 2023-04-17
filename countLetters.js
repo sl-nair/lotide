@@ -1,7 +1,7 @@
 const countLetters = function(phrase) {
   let results = {};
 
-  for (let letter of phrase) {
+  for (const letter of phrase) {
     if (results[letter]) {
       results[letter] += 1;
     } else {
@@ -11,4 +11,4 @@ const countLetters = function(phrase) {
   return results;
 };
 
-module.exports = countLetters
+module.exports = countLetters;

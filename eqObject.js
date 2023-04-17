@@ -1,12 +1,12 @@
 const assertEqual = require('./assertEqual');
-const eqArrays = require('./eqArrays')
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
 
-  for (let keys1 in object1) {
+  for (const keys1 in object1) {
     if (Object.prototype.hasOwnProperty.call(object2, keys1)) {
 
 

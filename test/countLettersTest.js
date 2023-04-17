@@ -1,7 +1,8 @@
 const countLetters = require('../countLetters');
+const assertEqual = require('../assertEqual');
 
-let countFunction = countLetters("LHL");
-let expectedResult = {
+const countFunction = countLetters("LHL");
+const expectedResult = {
   L:2,
   H:1
 };

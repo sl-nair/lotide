@@ -1,10 +1,10 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
-const letterPositions = function (phrase) {
+const letterPositions = function(phrase) {
   let results = {};
   let counter = 0;
   //loop through each letter of the phrase
-  for (let letter of phrase) {
+  for (const letter of phrase) {
 
     if (results[letter]) {
       results[letter].push(counter);
@@ -15,8 +15,6 @@ const letterPositions = function (phrase) {
   }
   return results;
 };
-
-
 
 console.log(letterPositions("hello"));
 assertArraysEqual(letterPositions("hello").e, [1]);
