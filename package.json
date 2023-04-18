@@ -2,7 +2,7 @@
   "name": "@sl.nair/lotide",
   "version": "2.0.0",
   "description": "A mini clone of the [Lodash] library.",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
